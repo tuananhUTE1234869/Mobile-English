@@ -1,0 +1,147 @@
+
+@media (min-width: 300px){
+    body{
+        background: #081b29 !important;
+        color: white !important;
+    }
+    .container{
+        max-width: 400px;
+    }
+    .user-title{
+        /* background: green; */
+        color: white;
+        user-select: none;
+    }
+    .user-title > h1 {
+        font-weight: 900;
+        font-size: 60px;
+    }
+    .user-menu {
+        /* background: red; */
+        height: 90px;
+        user-select: none;
+    }
+    .user-menu-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: aqua;
+        color: black !important;
+        font-size: 50px;
+        border: 3px solid #ddd;
+        font-weight: 600;
+    }
+    .user-menu-item:hover  {
+        background: red;
+        cursor: pointer;
+    }
+
+    .user-menu-item1:hover .user-menu-item1-list{
+        display: flex;
+    }
+    .user-menu-item1-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        font-size: 30px;
+        background: #ddd;
+        width: 100%;
+        top: 100%;
+        z-index: -1;
+    }
+    .user-menu-item1-list > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 45px;
+        font-weight: 400 !important;
+    }
+    .list-item:hover {
+        background: greenyellow;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px){
+    .user-title{
+        /* background: green; */
+        color: white;
+        user-select: none;
+    }
+    .user-title > h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+    .user-menu {
+        /* background: red; */
+        height: 90px;
+        user-select: none;
+    }
+    .user-menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: aqua;
+        color: black !important;
+        font-size: 25px;
+        border: 3px solid #ddd;
+    }
+    .user-menu-item:hover {
+        background: red;
+        cursor: pointer;    
+    }
+    /* .user-menu-empty {
+        
+    } */
+    .user-menu-item1-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        font-size: 30px;
+        background: #ddd;
+        width: 100%;
+        top: 100%;
+        z-index: -1;
+    }
+    .user-menu-item1-list > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 25px;
+        font-weight: 400 !important;
+    }
+    .list-item:hover {
+        background: greenyellow;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
