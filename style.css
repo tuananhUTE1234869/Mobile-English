@@ -1,6 +1,7 @@
 
 @media (min-width: 300px){
     body{
+        position: relative;
         background: #081b29 !important;
         color: white !important;
     }
@@ -62,6 +63,79 @@
         background: greenyellow;
         cursor: pointer;
     }
+
+    /*----------------------Danh từ----------------------- */
+    .container-DanhTu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #081b29;
+        z-index: 10;
+    }
+    .container-DanhTu .back-DanhTu{
+        position: absolute;
+        font-size: 40px;
+        bottom: 150px;
+        right: 50px;
+        background: red;    
+        padding: 10px 10px;
+    }
+    .container-DanhTu-title {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+    }
+    
+    .container-DanhTu-title > h1 {
+        display: block;
+        font-size: 50px
+    }
+    .container-DanhTu-content {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        width: 80%;
+        margin-left: 10%;
+        height: 60%;
+        list-style: none;
+    }
+    .container-DanhTu-content i{
+        color: red;
+    }
+    .container-DanhTu-content-item {
+        color: black;
+        position: relative;
+        width: 100%;
+        height: 16.66666666666667%;
+        border: 1px solid #ddd;
+    }
+    .container-DanhTu-content-1 {
+        /* background: blue; */
+    } 
+    .container-DanhTu-content-1-quetsion, .quetsion{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: greenyellow;
+    }
+    .container-DanhTu-content-1-answer, .answer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
 }
 
 @media (min-width: 1200px){
