@@ -10,6 +10,33 @@ Back_DanhTu.addEventListener("click", function(){
     document.querySelector(".container-DanhTu").style.display="none"
 })
 
+
+/*----------------------- Container Động Từ --------------------------------*/
+const Click_Dongtu = document.querySelector(".list-item-dongtu")
+const Back_Dongtu = document.querySelector(".back-DongTu")
+
+Click_Dongtu.addEventListener("click", function(){
+    document.querySelector(".container-DongTu").style.display="flex";
+})
+Back_Dongtu.addEventListener("click", function(){
+    document.querySelector(".container-DongTu").style.display="none";
+})
+
+
+/*----------------------- Container Tính Từ --------------------------------*/
+const Click_Tinhtu = document.querySelector(".list-item-tinhtu")
+const Back_Tinhtu = document.querySelector(".back-TinhTu")
+
+Click_Tinhtu.addEventListener("click", function(){
+    document.querySelector(".container-TinhTu").style.display="flex";
+})
+Back_Tinhtu.addEventListener("click", function(){
+    document.querySelector(".container-TinhTu").style.display="none";
+})
+
+
+
+
 /*-----------------------question - answer ----------------*/
 // const Click_question1 = document.querySelector(".container-DanhTu-content-1-quetsion")
 // const Click_answer1= document.querySelector(".container-DanhTu-content-1-answer")
@@ -40,6 +67,17 @@ for (let i=1; i<7; i++){
     })
 }
 
+// submit continue
+
+const continue_danhtu = document.querySelector(".container-DanhTu-random-reset")
+let danhtu=0;
+continue_danhtu.addEventListener("click", function(){
+    danhtu= danhtu + 1;
+    if (danhtu>2){
+        danhtu=0;
+    }
+    document.querySelector(".container-DanhTu-content-box").style.top=danhtu*(-100)+"%";
+})
 
 
 

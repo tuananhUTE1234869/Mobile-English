@@ -66,7 +66,7 @@
 
     /*----------------------Danh từ----------------------- */
     .container-DanhTu {
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
         top: -50px;
@@ -89,6 +89,7 @@
         width: 100%;
         height: 10%;
         justify-content: center;
+        user-select: none;
     }
     
     .container-DanhTu-title > h1 {
@@ -96,13 +97,23 @@
         font-size: 50px
     }
     .container-DanhTu-content {
-        display: flex;
-        flex-direction: column;
-        background: white;
+        position: relative;
         width: 80%;
+        height: 60%; 
         margin-left: 10%;
-        height: 60%;
+        overflow: hidden;
+  
+    }
+    .container-DanhTu-content-box{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background: white;
         list-style: none;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s all ease;
+
     }
     .container-DanhTu-content i{
         color: red;
@@ -152,13 +163,115 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     .container-DanhTu-random-reset:hover {
         background: red;
         cursor: pointer;
     }
 
+    /*Box2 */
+    .container-DanhTu-content-box2 {
+        position: absolute;
+        background-color: red;
+        transform: translateY(100%);
+        z-index: -1;
+    }
+    /*Box3 */
+    .container-DanhTu-content-box3 {
+        position: absolute;
+        background-color: blue;
+        transform: translateY(200%);
+        z-index: -1;
+    }
+
+
+/*----------------------Động Từ----------------------- */
+.container-DongTu{
+    position: absolute;
+    display: none;
+    top: -50px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #081b29;
+    z-index: 10;
 }
+.container-DongTu-title {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    user-select: none;
+}
+
+.container-DongTu-title > h1 {
+    margin-top: 20px;
+    display: block;
+    font-size: 50px;
+}
+.container-DongTu .back-DongTu{
+    position: absolute;
+    font-size: 40px;
+    bottom: 150px;
+    right: 50px;
+    background: red;    
+    padding: 10px 10px;
+}
+
+
+
+/*----------------------Tính Từ----------------------- */
+.container-TinhTu{
+    position: absolute;
+    display: none;
+    top: -50px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #081b29;
+    z-index: 10;
+}
+.container-TinhTu-title {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    user-select: none;
+}
+
+.container-TinhTu-title > h1 {
+    margin-top: 20px;
+    display: block;
+    font-size: 50px;
+}
+.container-TinhTu .back-TinhTu{
+    position: absolute;
+    font-size: 40px;
+    bottom: 150px;
+    right: 50px;
+    background: red;    
+    padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 @media (min-width: 1200px){
     .user-title{
@@ -211,6 +324,110 @@
     }
     .list-item:hover {
         background: greenyellow;
+        cursor: pointer;
+    }
+    
+        /*----------------------Danh từ----------------------- */
+        .container-DanhTu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #081b29;
+            z-index: 10;
+        }
+        .container-DanhTu .back-DanhTu{
+            position: absolute;
+            font-size: 15px;
+            bottom: 10px;
+            right: 10px;
+            background: red;    
+            padding: 10px 10px;
+            user-select: none;
+        }
+        .container-DanhTu-title {
+            display: flex;
+            width: 100%;
+            height: 10%;
+            justify-content: center;
+            user-select: none;
+        }
+        
+        .container-DanhTu-title > h1 {
+            display: block;
+            font-size: 25px
+        }
+        .container-DanhTu-content {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 50%;
+            margin-left: 25%;
+            height: 75%;
+            list-style: none;
+        }
+        .container-DanhTu-content i{
+            color: red;
+        }
+        .container-DanhTu-content-item {
+            color: black;
+            position: relative;
+            width: 100%;
+            height: 16.66666666666667%;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+    
+        .container-DanhTu-content-1-quetsion, .quetsion{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: greenyellow;
+        }
+        .container-DanhTu-content-1-answer, .answer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /*-------------------------------container-random-------------------------------*/
+    .container-DanhTu-random {
+        width: 100%;
+        height: 15%;
+        /* background: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-DanhTu-random-reset {
+        width: 100px;
+        height: 50px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-DanhTu-random-reset > p {
+        margin-top: 15px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        font-size: 15px;
+        user-select: none;
+    }
+    .container-DanhTu-random-reset:hover {
+        background: red;
         cursor: pointer;
     }
 }
