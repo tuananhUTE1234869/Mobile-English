@@ -52,24 +52,41 @@ const view_cautruc_1_click_answer=[];
 
 for (let i=1; i<7; i++){
     const view_cautruc_1_question = `.view-cautruc-1-content-item${i}-question`;
-    const view_cautruc_1_answer   = `.view-cautruc-1-content-item${i}`;
-    const view_cautruc_1_off = `.view-cautruc-1-content-item${i}-question`;
+    const view_cautruc_1_answer   = `.view-cautruc-1-content-item${i}-text`;
 
     view_cautruc_1_click_question[i] = document.querySelector(view_cautruc_1_question);
     view_cautruc_1_click_answer[i] = document.querySelector(view_cautruc_1_answer);
 
-    console.log(view_cautruc_1_answer)
-    console.log(view_cautruc_1_question)
-
     view_cautruc_1_click_question[i].addEventListener('click', function(){
-        document.querySelector(view_cautruc_1_off).style.display='none';
+        document.querySelector(view_cautruc_1_question).style.display='none'
     })
 
     view_cautruc_1_click_answer[i].addEventListener('click', function(){
-        document.querySelector(view_cautruc_1_off).style.display='flex';
+        document.querySelector(view_cautruc_1_question).style.display='flex'
     })
 
 }
+
+const view_cautruc_1_tieptheo = document.querySelector(".view-cautruc-1-bottom-tieptheo")
+
+let view_cautruc_1_index = 0;
+
+view_cautruc_1_tieptheo.addEventListener("click", function(){
+    view_cautruc_1_index=view_cautruc_1_index + 1;
+    if (view_cautruc_1_index>1){
+        view_cautruc_1_index = 0;
+    }
+
+    document.querySelector(".view-cautruc-1-content").style.right=view_cautruc_1_index*100+"%";
+})
+
+
+
+
+
+
+
+
 
 
 

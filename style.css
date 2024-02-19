@@ -328,6 +328,7 @@
     background-color: white;
     height: 1500px;
     color: black;
+    overflow: hidden;
 }
 .view-cautruc-1-content {
     position: relative;
@@ -348,6 +349,7 @@
 }
 .view-cautruc-1-content-item {
     display: flex;
+    flex-direction: column;
     position: relative;
     font-size: 30px;
     width: 100%;
@@ -378,7 +380,7 @@
 }
 
 .view-cautruc-1-question {
-    display: none;
+    display: flex;
     top: 0;
     position: absolute;
     width: 100%;
@@ -388,6 +390,8 @@
     color: yellow;
     font-weight: 800;
     z-index: 10;
+    justify-content: center;
+    align-items: center;
 }
 
 
