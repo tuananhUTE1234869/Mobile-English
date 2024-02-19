@@ -34,6 +34,28 @@ Back_Tinhtu.addEventListener("click", function(){
     document.querySelector(".container-TinhTu").style.display="none";
 })
 
+/* ``````````````````` cấu trúc ngữ pháp red book````````````````````````` */
+
+/*view cấu trúc 1 -> sự hòa hợp S + V */
+const HoaHop_S_V = document.querySelector(".list-item-cautruc1")
+const Exit_view_cautruc_1 = document.querySelector(".view-cautruc-1-exit")
+
+HoaHop_S_V.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-1").style.display="flex"
+})
+Exit_view_cautruc_1.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-1").style.display="none"
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,6 +100,34 @@ continue_danhtu.addEventListener("click", function(){
     }
     document.querySelector(".container-DanhTu-content-box").style.top=danhtu*(-100)+"%";
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
