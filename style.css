@@ -292,7 +292,7 @@
 
 /*view cấu trúc 1 --> sự hòa hợp S + V*/
 .view-cautruc-1 {
-    display: none;
+    /* display: none; */
     top: -50px;
     width: 100vw;
     height: 100vh;
@@ -320,6 +320,117 @@
     bottom: 200px;
     right: 30px;
 }
+
+.view-cautruc-1-container {
+    margin-top: 100px;
+    width: 100vw;
+    background-color: white;
+    height: 1500px;
+    color: black;
+}
+.view-cautruc-1-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.view-cautruc-1-content-item1-box1{
+    width: 100%;
+    height: 100%;
+}
+.view-cautruc-1-content-item1-box2{
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: white;
+    transform: translateX(100%);
+}
+.view-cautruc-1-content-item {
+    font-size: 30px;
+    width: 100%;
+    height: 33.33333%;
+}
+.view-cautruc-1-content-item1-box {
+    display: flex;
+    flex-direction: column;
+}
+/*qt1*/
+.view-cautruc-1-content-item1  {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.view-cautruc-1-content-item1-title {
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item1-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item1-text > li {
+    margin-left: 30px;
+    list-style: none;
+}
+.view-cautruc-1-content-item1-text > :nth-child(1){
+    color: red;
+    font-weight: 800;
+}
+
+/*qt2*/
+.view-cautruc-1-content-item2-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item2-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item2-text > li {
+    margin-left: 30px;
+    list-style: none;
+}
+.view-cautruc-1-content-item2-text > :nth-child(1){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item2-text > :nth-child(2){
+    color: red;
+    font-weight: 800;
+}
+
+/*qt3*/
+.view-cautruc-1-content-item3-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item3-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item3-text > li {
+    margin-left: 30px;
+    list-style: none;
+}
+.view-cautruc-1-content-item3-text > :nth-child(1){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item3-text > :nth-child(2){
+    color: red;
+    font-weight: 800;
+}
+
+
+
+
+
 
 }
 
