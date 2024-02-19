@@ -255,6 +255,21 @@
 }
 
 
+/* Cấu trúc ngữ pháp red book */
+
+.user-menu-item2-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background: #ddd;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+
 
 
 
@@ -289,6 +304,7 @@
         user-select: none;
     }
     .user-menu-item {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
