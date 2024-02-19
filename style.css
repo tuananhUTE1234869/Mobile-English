@@ -292,7 +292,8 @@
 
 /*view cấu trúc 1 --> sự hòa hợp S + V*/
 .view-cautruc-1 {
-    /* display: none; */
+    display: flex;
+    flex-direction: column;
     top: -50px;
     width: 100vw;
     height: 100vh;
@@ -346,6 +347,8 @@
     transform: translateX(100%);
 }
 .view-cautruc-1-content-item {
+    display: flex;
+    position: relative;
     font-size: 30px;
     width: 100%;
     height: 33.33333%;
@@ -355,11 +358,6 @@
     flex-direction: column;
 }
 /*qt1*/
-.view-cautruc-1-content-item1  {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
 .view-cautruc-1-content-item1-title {
     text-align: center;
     width: 100%;
@@ -378,6 +376,22 @@
     color: red;
     font-weight: 800;
 }
+
+.view-cautruc-1-question {
+    display: none;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: green;
+    font-size: 50px;
+    color: yellow;
+    font-weight: 800;
+    z-index: 10;
+}
+
+
+
 
 /*qt2*/
 .view-cautruc-1-content-item2-title{
@@ -404,6 +418,7 @@
 }
 
 /*qt3*/
+
 .view-cautruc-1-content-item3-title{
     text-align: center;
     width: 100%;
@@ -427,12 +442,137 @@
     font-weight: 800;
 }
 
+/*qt4*/
+.view-cautruc-1-content-item4-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item4-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item4-text > li {
+    margin-left: 30px;
+    list-style: none;
+}
+.view-cautruc-1-content-item4-text > :nth-child(1){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item4-text > :nth-child(2){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item4-text > :nth-child(3){
+    color: red;
+    font-weight: 800;
+}
+
+
+/*qt5*/
+.view-cautruc-1-content-item5-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item5-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item5-text > li {
+    margin-left: 30px;
+    list-style: none;
+}
+.view-cautruc-1-content-item5-text > :nth-child(1){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item5-text > :nth-child(2){
+    color: red;
+    font-weight: 800;
+}
+.view-cautruc-1-content-item5-text > :nth-child(3){
+    color: red;
+    font-weight: 800;
+}
+
+
+/*qt6*/
+.view-cautruc-1-content-item6-title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.view-cautruc-1-content-item6-text {
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+.view-cautruc-1-content-item6-text > li {
+    margin-left: 30px;
+    list-style: none;
+    color: red;
+    font-weight: 800;
+}
+
+
+.view-cautruc-1-bottom {
+    width: 100%;
+    height: 5%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-cautruc-1-bottom-tieptheo {
+    width: 200px;
+    font-size: 30px;
+    background:red;
+    text-align: center;
+    height: 50px;
+}
+.view-cautruc-1-bottom-tieptheo:hover {
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
 
 
 

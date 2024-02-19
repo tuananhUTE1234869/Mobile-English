@@ -47,10 +47,29 @@ Exit_view_cautruc_1.addEventListener("click", function(){
     document.querySelector(".view-cautruc-1").style.display="none"
 })
 
+const view_cautruc_1_click_question=[];
+const view_cautruc_1_click_answer=[];
 
+for (let i=1; i<7; i++){
+    const view_cautruc_1_question = `.view-cautruc-1-content-item${i}-question`;
+    const view_cautruc_1_answer   = `.view-cautruc-1-content-item${i}`;
+    const view_cautruc_1_off = `.view-cautruc-1-content-item${i}-question`;
 
+    view_cautruc_1_click_question[i] = document.querySelector(view_cautruc_1_question);
+    view_cautruc_1_click_answer[i] = document.querySelector(view_cautruc_1_answer);
 
+    console.log(view_cautruc_1_answer)
+    console.log(view_cautruc_1_question)
 
+    view_cautruc_1_click_question[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_1_off).style.display='none';
+    })
+
+    view_cautruc_1_click_answer[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_1_off).style.display='flex';
+    })
+
+}
 
 
 
