@@ -70,17 +70,32 @@ for (let i=1; i<7; i++){
 const view_cautruc_1_tieptheo = document.querySelector(".view-cautruc-1-bottom-tieptheo")
 
 let view_cautruc_1_index = 0;
+const view_cautruc_1_reset=[];
 
 view_cautruc_1_tieptheo.addEventListener("click", function(){
     view_cautruc_1_index=view_cautruc_1_index + 1;
     if (view_cautruc_1_index>1){
         view_cautruc_1_index = 0;
     }
-
     document.querySelector(".view-cautruc-1-content").style.right=view_cautruc_1_index*100+"%";
+    for (let i=1; i<7 ; i++){
+        const b_view_cautruc_1_reset = `.view-cautruc-1-content-item${i}-question`;
+
+        document.querySelector(b_view_cautruc_1_reset).style.display="flex";
+    }
 })
 
 
+/*view cấu trúc 2 ->  Tính từ phân từ, mệnh đề phân từ và câu trần thuật */
+const view_cauttruc_2 = document.querySelector(".list-item-cautruc2");
+const view_cautruc_2_exit = document.querySelector(".view-cautruc-2-exit")
+
+view_cauttruc_2.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-2").style.display = "flex";
+})
+view_cautruc_2_exit.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-2").style.display = "none";
+})
 
 
 
