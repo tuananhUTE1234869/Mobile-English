@@ -541,7 +541,7 @@
 
 /*view cấu trúc 2 --> Tính từ phân từ, mệnh đề phân từ và câu trần thuật*/
 .view-cautruc-2{
-    display: flex;
+    display: none;
     flex-direction: column;
     top: -50px;
     position: absolute;
