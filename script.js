@@ -98,6 +98,42 @@ view_cautruc_2_exit.addEventListener("click", function(){
 })
 
 
+const view_cautruc_2_click_question=[];
+const view_cautruc_2_click_answer=[];
+
+for (let i=1; i<7; i++){
+    const view_cautruc_2_question = `.view-cautruc-2-content-box-question${i}`;
+    const view_cautruc_2_answer   = `.view-cautruc-2-content-box-answer${i}`;
+
+    view_cautruc_2_click_question[i] = document.querySelector(view_cautruc_2_question);
+    view_cautruc_2_click_answer[i] = document.querySelector(view_cautruc_2_answer);
+
+    view_cautruc_2_click_question[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_2_question).style.display='none'
+    })
+
+    view_cautruc_2_click_answer[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_2_question).style.display='flex'
+    })
+
+}
+const view_cautruc_2_tieptheo = document.querySelector(".view-cautruc-2-bottom-tieptheo")
+
+let view_cautruc_2_index = 0;
+const view_cautruc_2_reset=[];
+
+view_cautruc_2_tieptheo.addEventListener("click", function(){
+    view_cautruc_2_index=view_cautruc_2_index + 1;
+    if (view_cautruc_2_index>1){
+        view_cautruc_2_index = 0;
+    }
+    document.querySelector(".view-cautruc-2-content").style.right=view_cautruc_2_index*100+"%";
+    for (let i=1; i<7 ; i++){
+        const b_view_cautruc_2_reset = `.view-cautruc-2-content-box-question${i}`;
+
+        document.querySelector(b_view_cautruc_2_reset).style.display="flex";
+    }
+})
 
 
 

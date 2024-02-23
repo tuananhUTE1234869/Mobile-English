@@ -180,13 +180,6 @@
         transform: translateY(100%);
         z-index: -1;
     }
-    /*Box3 */
-    .container-DanhTu-content-box3 {
-        position: absolute;
-        background-color: blue;
-        transform: translateY(200%);
-        z-index: -1;
-    }
 
 
 /*----------------------Động Từ----------------------- */
@@ -573,7 +566,7 @@
     width: 100vw;
     height: 1500px;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .view-cautruc-2-content{
     position: relative;
@@ -583,21 +576,17 @@
     flex-direction: row;
 }
 .view-cautruc-2-content-box{
+    position: relative;
     width: 100%;
     height: 100%;
 }
 .view-cautruc-2-content-box2{
     position: absolute;
     top: 0;
-    background: red;
+    background: white;
     transform: translateX(100%);
 }
-.view-cautruc-2-content-box3{
-    position: absolute;
-    top: 0;
-    background: green;
-    transform: translateX(200%);
-}
+
 
 /*box1*/
 .view-cautruc-2-content-box1-title, .view-cautruc-2-content-box-title{
@@ -607,19 +596,17 @@
     width: 100%;
     height: 5%;
 }
-.view-cautruc-2-content-box1-text{
+.view-cautruc-2-content-box1-text, .view-cautruc-2-content-box2-text{
     width: 100%;
     height: 95%;
 }
-.view-cautruc-2-content-box1-item {
+.view-cautruc-2-content-box1-item, .view-cautruc-2-content-box2-item {
+    position: relative;
     width: 100%;
     height: 33.333333%;
 }
 
-.view-cautruc-2-content-box1-item1{
-    background: #ddd;
-}
-.view-cautruc-2-content-box1-item-title{
+.view-cautruc-2-content-box1-item-title, .view-cautruc-2-content-box2-item-title{
     font-weight: 800;
     text-align: center;
     line-height: 50px;
@@ -664,7 +651,7 @@
 }
 
 .view-cautruc-2-content-box1-item3-content {
-    background: burlywood;
+    /* background: burlywood; */
     display: flex;
     flex-direction: row;
 }
@@ -690,13 +677,40 @@
     line-height: 30px;
     font-weight: 800;
 }
+#table {
+    border: 2px solid red;
+}
+.cot1{
+    width: 5% !important;
+    text-align: center;
+}
+.cot2{
+    width: 25% !important;
+    text-align: center;
+}
 
-
-
-
-
-
-
+i {
+    color: red;
+}
+.cot3 {
+    text-align: center;
+}
+.view-cautruc-2-content-box-question {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: green;
+    top: 0;
+}
+.view-cautruc-2-content-box-question > h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
 
 
 
