@@ -714,7 +714,7 @@ i {
 
 /*view cấu trúc 3 --> Đại từ, trạng từ*/
 .view-cautruc-3{
-    display: flex;
+    display: none;
     flex-direction: column;
     top: -50px;
     position: absolute;
