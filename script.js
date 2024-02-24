@@ -136,8 +136,16 @@ view_cautruc_2_tieptheo.addEventListener("click", function(){
 })
 
 
+/*view cấu trúc 3 ->  Đại từ, trạng từ */
+const view_cauttruc_3 = document.querySelector(".list-item-cautruc3");
+const view_cautruc_3_exit = document.querySelector(".view-cautruc-3-exit")
 
-
+view_cauttruc_3.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-3").style.display = "flex";
+})
+view_cautruc_3_exit.addEventListener("click", function(){
+    document.querySelector(".view-cautruc-3").style.display = "none";
+})
 
 
 
