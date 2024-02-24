@@ -147,8 +147,43 @@ view_cautruc_3_exit.addEventListener("click", function(){
     document.querySelector(".view-cautruc-3").style.display = "none";
 })
 
+const view_cautruc_3_click_question=[];
+const view_cautruc_3_click_answer=[];
 
+for (let i=1; i<8; i++){
+    const view_cautruc_3_question = `.view-cautruc-2-content-box1-text-question${i}`;
+    const view_cautruc_3_answer   = `.view-cautruc-2-content-box1-text-answer${i}`;
+    console.log(view_cautruc_3_question)
 
+    view_cautruc_3_click_question[i] = document.querySelector(view_cautruc_3_question);
+    view_cautruc_3_click_answer[i] = document.querySelector(view_cautruc_3_answer);
+
+    view_cautruc_3_click_question[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_3_question).style.display='none'
+    })
+
+    view_cautruc_3_click_answer[i].addEventListener('click', function(){
+        document.querySelector(view_cautruc_3_question).style.display='flex'
+    })
+
+}
+const view_cautruc_3_tieptheo = document.querySelector(".view-cautruc-3-bottom-tieptheo")
+
+let view_cautruc_3_index = 0;
+const view_cautruc_3_reset=[];
+
+view_cautruc_3_tieptheo.addEventListener("click", function(){
+    view_cautruc_3_index=view_cautruc_3_index + 1;
+    if (view_cautruc_3_index>1){
+        view_cautruc_3_index = 0;
+    }
+    document.querySelector(".view-cautruc-3-content").style.right=view_cautruc_3_index*100+"%";
+    for (let i=1; i<7 ; i++){
+        const b_view_cautruc_3_reset = `.view-cautruc-2-content-box1-text-question${i}`;
+
+        document.querySelector(b_view_cautruc_3_reset).style.display="flex";
+    }
+})
 
 
 
