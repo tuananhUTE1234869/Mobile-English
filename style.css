@@ -762,7 +762,7 @@ i {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: red;
+    /* background: red; */
 }
 .view-cautruc-2-content-box1-text-answer {
     position: relative;
